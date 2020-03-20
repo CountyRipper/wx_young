@@ -3,19 +3,23 @@
     <search_input></search_input>
     <!-- 轮播图 -->
     <view>
-        <swiper class="index_swiper" >
+        <swiper class="index_swiper" autoplay="true" circular="{{true}}" indicator-dots="{{true}}" indicator-color="rgb(124, 179, 66)">
         <!-- 轮播图条件渲染 -->
-            <swiper-item class="" wx:for="{{swiperlist}}" wx:key="{{siwperid}}">
-                <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
-                    <imag src="" alt=""></imag>
-                </navigator>
-                  
-            </swiper-item>
-              
-        </swiper>
-          
+            <swiper-item wx:for="{{swiperlist}}" wx:key="*this" >
+                <navigator>
+                <!-- swiper标签默认宽高100%*150px
+                image标签默认宽高320px*240px 
+                -->
+                    <image src="{{item.src}}" mode="widthFix"></image>
+                </navigator>                  
+            </swiper-item>              
+        </swiper>          
+    </view>
+    <view>
+        <text class="index_text">推荐课程</text>
     </view>
       
+         
 </view>
 
   

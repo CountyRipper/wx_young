@@ -5,14 +5,18 @@ Page({
    */
   data: {
     // 轮播图
-    swiperlist:[]
+    swiperlist:[
+      {index:0, src:"cloud://ycloud-qghvc.7963-ycloud-qghvc-1301606469/swiper/young_c.png"},
+      {index:1,src:"cloud://ycloud-qghvc.7963-ycloud-qghvc-1301606469/swiper/young_e.png"}
+    ],
+    check:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+     
   },
 
   /**
