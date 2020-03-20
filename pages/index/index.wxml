@@ -1,1 +1,21 @@
+<view class="s_index">
+<!-- 搜索框 -->
+    <search_input></search_input>
+    <!-- 轮播图 -->
+    <view>
+        <swiper class="index_swiper" >
+        <!-- 轮播图条件渲染 -->
+            <swiper-item class="" wx:for="{{swiperlist}}" wx:key="{{siwperid}}">
+                <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+                    <imag src="" alt=""></imag>
+                </navigator>
+                  
+            </swiper-item>
+              
+        </swiper>
+          
+    </view>
+      
+</view>
 
+  
