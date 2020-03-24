@@ -5,5 +5,5 @@ App({
     wx.cloud.init({
       env:"ycloud-qghvc"
     })
-  }
+  },
 })

@@ -1,7 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/search/search",
+    "pages/young_c/young_c",
+    "pages/young_e/young_e"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,30 +14,32 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "推荐",
-      "iconPath": "icons/home.png",
-      "selectedIconPath": "icons/home_a.png"
-    },
-    {
-      "pagePath": "pages/index/index",
-      "text": "我的课程",
-      "iconPath": "icons/shop.png",
-      "selectedIconPath": "icons/shop_a.png"
-    },
-    {
-      "pagePath": "pages/index/index",
-      "text": "奖励金",
-      "iconPath": "icons/discount.png",
-      "selectedIconPath": "icons/discount_a.png"
-    },
-    {
-      "pagePath": "pages/index/index",
-      "text": "个人中心",
-      "iconPath": "icons/user.png",
-      "selectedIconPath": "icons/user_a.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/home_a.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的课程",
+        "iconPath": "icons/shop.png",
+        "selectedIconPath": "icons/shop_a.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "奖励金",
+        "iconPath": "icons/discount.png",
+        "selectedIconPath": "icons/discount_a.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "个人中心",
+        "iconPath": "icons/user.png",
+        "selectedIconPath": "icons/user_a.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

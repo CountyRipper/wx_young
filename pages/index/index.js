@@ -16,7 +16,45 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     
+     wx.getUserInfo({
+       withCredentials: 'false',
+       lang: 'zh_CN',
+       timeout:100,
+       success: (result) => {
+         console.log(result.userInfo);
+       },
+       fail: () => {
+         wx.showModal({
+           title: '警告',
+           content: '请进行授权',
+           showCancel: true,
+           cancelText: '取消',
+           cancelColor: '#000000',
+           confirmText: '确定',
+           confirmColor: '#3CC51F',
+           success: (result) => {
+             if (result.confirm) {
+               console.log("用户确认");
+               wx.navigateTo({
+                 url: '../login/login',
+                 success: (result) => {
+                   console.log("已跳转")
+                 },
+                 fail: () => {
+                   console.log("未跳转")
+                 }  
+               });
+                 
+             }
+           },
+           fail: () => {},
+           complete: () => {}
+         });
+           
+       },
+       complete: () => {console.log("compelet")}
+     });
+       
   },
 
   /**
